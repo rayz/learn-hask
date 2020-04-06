@@ -6,5 +6,6 @@ fn main(){
     let emoji = "🌀";
     let repeated: String  = iter::repeat(emoji).take(5).collect();
 
+
     println!("wow rust has emojis {}", repeated);
 }
