@@ -27,8 +27,8 @@ fn main(){
     println!("r1 is {} , r2 is {}", r1, r2);
 
 //    let r3 = &mut s3;
-
-
+//    cant have two mutable references at sametime
+//        (this is to avoid data races)
 
 }
 
