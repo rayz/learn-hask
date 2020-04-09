@@ -16,4 +16,9 @@ fn main(){
     v.pop();
 
 
+    let s3 = String::from("test2");
+    let s4: Vec<char> = s3.chars().collect();
+    println!("{:?}",s4);
+
+
 }
