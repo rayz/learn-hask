@@ -30,6 +30,8 @@ fn main(){
 //    cant have two mutable references at sametime
 //        (this is to avoid data races)
 
+
+
 }
 
 fn calculate_length(some_string: &String) -> usize{
