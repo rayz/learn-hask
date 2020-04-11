@@ -34,7 +34,7 @@ fn main(){
 
 }
 
-fn calculate_length(some_string: &String) -> usize{
+fn calculate_length(some_string: &str) -> usize{
 
     some_string.len()
 
