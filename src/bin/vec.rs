@@ -3,6 +3,7 @@ fn main(){
 
 //    test_iter_mut();
 //    test_fold();
+    test_enum();
 
 }
 
@@ -19,4 +20,18 @@ fn test_fold(){
     let sum_of_double = v.iter().fold(0, |acc, x| acc + (x * 2));
     println!("{}",sum_of_double);
 
+}
+
+fn test_enum(){
+
+    #[derive(Debug)]
+    enum Multi{
+        Number(i32),
+        String(String)
+    }
+    let mut v : Vec<Multi> = Vec::new();
+    v.push(Multi::Number(100));
+    v.push(Multi::String("hundred".to_string()));
+
+    println!("{:?}", v);
 }
