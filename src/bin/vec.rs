@@ -21,4 +21,11 @@ fn main(){
     println!("{:?}",s4);
 
 
+
+
+    let vec = vec![0,1,2,3,4];
+    vec.iter().map(|x| *x+1).filter(|x| *x > 1).for_each(|x| print!("{}", x));
+    println!("{:?}",vec);
+
+
 }
