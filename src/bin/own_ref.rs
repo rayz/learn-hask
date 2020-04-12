@@ -1,7 +1,4 @@
-
-
-fn main(){
-
+fn main() {
     let mut s1 = String::from("hello");
 
     /*
@@ -16,8 +13,7 @@ fn main(){
 
     change(&mut s1);
 
-    println!("after change, s1 is : {}",s1);
-
+    println!("after change, s1 is : {}", s1);
 
     let mut s2 = String::from("test");
     let r1 = &mut s2;
@@ -26,20 +22,15 @@ fn main(){
     let r2 = &mut s3;
     println!("r1 is {} , r2 is {}", r1, r2);
 
-//    let r3 = &mut s3;
-//    cant have two mutable references at sametime
-//        (this is to avoid data races)
-
-
-
+    //    let r3 = &mut s3;
+    //    cant have two mutable references at sametime
+    //        (this is to avoid data races)
 }
 
-fn calculate_length(some_string: &str) -> usize{
-
+fn calculate_length(some_string: &str) -> usize {
     some_string.len()
-
 }
 
-fn change(some_string: &mut String){
+fn change(some_string: &mut String) {
     some_string.push_str(" world!");
 }
