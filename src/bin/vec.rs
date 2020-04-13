@@ -32,4 +32,5 @@ fn test_enum() {
     v.push(Multi::String("hundred".to_string()));
 
     println!("{:?}", v);
+    
 }
